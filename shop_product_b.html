@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Carbon Steel Loaf Pan</title>
+<link rel=" icon" href="image/logo2.png" type="image/png">
+<!--css-->
+<link rel="stylesheet" type="text/css" href="common.css" />
+<link rel="stylesheet" type="text/css" href="shop_product.css" />
+<link rel="stylesheet" type="text/css" href="slideshow.css" />
+<!--font type-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo&family=Lobster&family=Roboto+Slab&display=swap" rel="stylesheet">
+<!--others-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+
+<body>
+<!-- header -->
+	<div id="header">
+		<img src="image/logo2.png" id="logo" alt="pic">
+		<div id="more"> 
+			<a href="index.html#login">Login</a>
+			<p>|</p>
+			<a href="signup.html">Sign Up</a>
+		</div>
+		<div id="menu">
+			<a href="index.html" id="home_nav">Home </a>
+			<a href="index.html#recipe_page" id="recipe_nav">Recipe </a>
+			<a href="tips.html" id="tips_nav">Tips </a>
+			<a href="events.html" id="events_nav">Events </a>
+			<a href="shop.html" id="shop_nav">Shop </a>
+			<a href="upload.html" id="upload_nav">Upload</a>
+			<a href="about.html" id="about_nav">About</a>
+		</div>
+	</div>
+	<br>
+	<div class="page_title"><a href="shop.html">Shop</a> &#10095; Carbon Steel Loaf Pan </div>
+	
+<!-- product image & main description -->
+	
+	<div class="wrapper_product">
+		<div class="imgwrap">
+			<div class="container_slide">
+				<div class="mySlides">
+					<div class="numbertext">1 / 3</div>
+					<img src="image/loaf_pan1.JPG"  alt="loaf_pan1"> 
+				</div>	
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 3</div>
+					<img src="image/loaf_pan2.JPG"  alt="loaf_pan2">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 3</div>
+					<img src="image/loaf_pan3.JPG"  alt="loaf_pan3">
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">❮</a>
+				<a class="next" onclick="plusSlides(1)">❯</a>
+
+				<div class="row">
+					<div class="column">
+					 <img class="demo cursor" src="image/loaf_pan1.jpg"  onclick="currentSlide(1)" alt="loaf_pan1">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="image/loaf_pan2.jpg"  onclick="currentSlide(2)" alt="loaf_pan2">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="image/loaf_pan3.jpg"  onclick="currentSlide(3)" alt="loaf_pan3">
+					</div>
+				</div>
+			</div>
+		</div>
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  var captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+	</script>
+		<div class="product_main_descrip">
+			<p id="product_name">Carbon Steel Loaf Pan</p>
+			<p>3/5
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star "></span>
+			<span class="fa fa-star"></span>
+			</p>
+			<p>55 sold</p>
+			<p id="product_price">RM3.90</p>
+			<div id="quantity">
+				<label for="qty">Quantity: </label>
+				<input type="text" name="qty" id="qty">
+			</div>
+		  <div class="btn_product" onClick="messagebox()">Add To Cart</div> 
+		  <div class="btn_product" onClick="messagebox()">Buy Now</div> 	
+		</div>
+	</div>
+	<script>
+		function messagebox()
+			{
+				alert("Sorry, this item is currently unavailable")
+			}
+	</script>
+<!--description & review-->
+	<div id="product_descrip"> 
+		<p class="subtitle">Description</p>
+		<ul><li><b>Item Name: </b>Loaf Pan</li>
+			<li><b>Material: </b>Carbon Steel + Non-stick Coating</li>
+			<li><b>Features:</b> Non Stick, DIY Baking Tool, No Rust, Heat Resistant</li>
+			<li><b>Size:</b> 15.6cm x 8.6cm</li>
+			<li><b>Package Included:</b> 1 x Loaf Pan</li>
+		</ul> 
+	</div>
+	<div  id="product_review">
+		<p class="subtitle">Reviews</p>
+		<div class="existing_review">
+			<img src="image/user4.jpg" alt="user 1">
+			<p><b>j***y</b>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star "></span>
+			<span class="fa fa-star "></span>
+			<span class="fa fa-star "></span>
+			<span class="fa fa-star "></span></p>
+			<p> The packaging was not good &#128546;, I received it with a few scratches..&#128542;</p>
+		</div>
+		<hr>
+		<div class="existing_review">
+			<img src="image/user2.jpg" alt="user 1">
+			<p><b>N***5</b>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span></p>
+			<p>Good product quality.&#128077;&#128077;</p>
+		</div>
+	</div>
+	
+<!-- may like -->	
+	
+	<div id="wrapper_maylike">
+		<h2 id="maylike_title">You may also like</h2>
+		<a href="shop_product_a.html" class="maylike_option">
+			<img src="image/mixer1.jpg" class="maylike_pic" alt="shop option 2" >
+			<h4>7 Speed Portable Electric Mixer </h4>
+			<div class="p1">RM20.50</div>
+			<div class="p2">18 sold</div>
+		</a>
+		<a href="shop_product_c.html" class="maylike_option">
+			<img src="image/cream1.jpg" class="maylike_pic" alt="shop option 3" >
+			<h3>Anchor Whipping Cream</h3>
+			<div class="p1">RM19.00</div>
+			<div class="p2">72 sold</div>
+		</a>
+	</div>
+<!-- footer -->	
+	<div id="footer">
+		<h3>Site Map</h3>
+		<div class="footer_column">
+			<a href="index.html" id="home_nav2">Home </a><br>
+			<a href="index.html#recipe_page" id="recipe_nav2">Recipe </a><br>
+			<a href="tips.html" id="tips_nav3">Tips </a><br>
+		</div>
+		<div class="footer_column">
+			<a href="events.html" id="events_nav2">Events </a><br>
+			<a href="shop.html" id="shop_nav2">Shop </a><br>
+			<a href="upload.html" id="upload_nav2">Upload</a><br>
+		</div>
+		<div class="footer_column">	
+			<a href="about.html" id="about_nav2">About</a><br>
+			<a href="index.html#login" id="login_nav2">Login</a><br>
+			<a href="signup.html" id="signup_nav2">Sign Up </a><br>
+		</div>
+		<img src="image/logo2.png" id="logo2" alt="pic">
+		<div id="web_name">Bake O'clock</div>
+	</div>
+
+</body>
+</html>

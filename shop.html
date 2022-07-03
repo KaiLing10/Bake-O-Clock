@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Shop</title>
+<link rel=" icon" href="image/logo2.png" type="image/png">
+<link rel="stylesheet" type="text/css" href="common.css" />
+<!--font type-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo&family=Lobster&family=Roboto+Slab&display=swap" rel="stylesheet">
+<style>
+	#wrapper_shop{
+		width:1150px;
+		margin:auto ;
+	}
+	.shop_menu{
+		width:1150px;
+		float:left;
+		background: rgb(235, 231, 249);
+		margin:auto;
+		padding-left: 5px;
+		font-size: 20pt;
+		font-family: 'Roboto Slab', serif;
+	}
+	.shop_menu a:hover{
+		color:white;
+		background:rgb(148, 118, 255);
+	}
+	.shop_menu p{display: inline-block}
+	.selected_menu_option{
+		font-size: 20pt;
+		background: rgb(148, 118, 255);
+		color: white;
+	}
+	.shop_option{
+		background-color:white;
+		margin: 25px 80px 50px 15px;
+		width: 300px;
+		height:300pt;
+		float:left;
+		box-shadow: 0 6px 10px 3px dimgray;
+		font-family: 'Heebo', sans-serif;
+		padding-bottom: 10px
+	}
+	.shop_option:hover{
+		transform: scale(1.05);
+		box-shadow: 0 6px 10px 5px dimgray;
+		transition: 0.2s
+	}
+	.option_pic{
+		width:100%;
+		height:270px
+	}
+	.shop_option h2,.shop_option h3{
+		text-align: center;
+		background: rgb(221, 212, 252);	
+		height: 30px
+	}
+	.shop_option h3{padding-top: 3px}
+	.p1{
+		float:left;
+		font-size: 16pt;
+		color: red;
+		margin-left: 20px;	
+	}
+	.p2{
+		float:right;
+		font-size: 16pt;
+		margin-right: 20px;		
+	}
+	
+	
+</style>
+</head>
+
+<body>
+	<div id="header">
+		<img src="image/logo2.png" id="logo" alt="pic">
+		<div id="more"> 
+			<a href="index.html#login">Login</a>
+			<p>|</p>
+			<a href="signup.html">Sign Up</a>
+		</div>
+		<div id="menu">
+			<a href="index.html" id="home_nav">Home </a>
+			<a href="index.html#recipe_page" id="recipe_nav">Recipe </a>
+			<a href="tips.html" id="tips_nav">Tips </a>
+			<a href="events.html" id="events_nav">Events </a>
+			<a href="shop.html" id="shop_nav">Shop </a>
+			<a href="upload.html" id="upload_nav">Upload</a>
+			<a href="about.html" id="about_nav">About</a>
+		</div>
+	</div>
+	
+	<div class="page_title">Shop</div>
+	<div id="wrapper_shop">
+		<div class="shop_menu" id="tools"> 
+			<a href="#tools" class="selected_menu_option" > Baking tools </a>
+			<p>|</p>
+			<a href="#ingredients" >Ingredients </a>
+		</div>
+		
+		<a href="shop_product_a.html" class="shop_option">
+			<img src="image/mixer1.jpg" class="option_pic" alt="shop option 1" >
+			<h3>7 Speed Portable Electric Mixer</h3>
+			<p  class="p1">RM20.50</p>
+			<p  class="p2">18 sold</p>
+		</a>
+		
+		<a href="shop_product_b.html" class="shop_option">
+			<img src="image/loaf_pan1.jpg" class="option_pic" alt="shop option 2" >
+			<h2>Carbon Steel Loaf Pan </h2>
+			<p class="p1">RM3.90</p>
+			<p class="p2">55 sold</p>
+		</a>
+		
+	
+		<div class="shop_menu" id="ingredients"> 
+			<a href="#tools" > Baking tools </a>
+			<p>|</p>
+			<a href="#ingredients" class="selected_menu_option"> Ingredients </a>
+		</div>
+		
+		<a href="shop_product_c.html" class="shop_option">
+			<img src="image/cream1.jpg" class="option_pic" alt="shop option 3" >
+			<h2>Anchor Whipping Cream</h2>
+			<p class="p1">RM19.00</p>
+			<p class="p2">72 sold</p>
+		</a>
+		
+	</div>
+	
+	<div id="footer">
+		<h3>Site Map</h3>
+		<div class="footer_column">
+			<a href="index.html" id="home_nav2">Home </a><br>
+			<a href="index.html#recipe_page" id="recipe_nav2">Recipe </a><br>
+			<a href="tips.html" id="tips_nav3">Tips </a><br>
+		</div>
+		<div class="footer_column">
+			<a href="events.html" id="events_nav2">Events </a><br>
+			<a href="shop.html" id="shop_nav2">Shop </a><br>
+			<a href="upload.html" id="upload_nav2">Upload</a><br>
+		</div>
+		<div class="footer_column">	
+			<a href="about.html" id="about_nav2">About</a><br>
+			<a href="index.html#login" id="login_nav2">Login</a><br>
+			<a href="signup.html" id="signup_nav2">Sign Up </a><br>
+		</div>
+		<img src="image/logo2.png" id="logo2" alt="pic">
+		<div id="web_name">Bake O'clock</div>
+	</div>
+</body>
+</html>

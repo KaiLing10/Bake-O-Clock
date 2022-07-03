@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0;
+	background-image: url("image/back.jpg");
+	background-size: 50%;	
+}
+
+/*Header*/
+#header{
+	background-image: linear-gradient(to bottom, rgb(187, 168, 255),lavender);
+	height:200px;
+	padding-left: 5%;	
+}
+#logo{
+	width: 220px;
+	float:left;
+}
+a{
+	color: #000000;
+	text-decoration: none
+}	
+		
+#menu{
+	font-family: 'Lobster', cursive;
+	font-size: 28pt;
+	text-shadow: 2px 2px 4px white;
+	color:black;
+	border-bottom-style: double;
+	border-top-style: double;
+	float:left;
+	margin: 40px 0px 5px 95px
+}
+#menu a{margin-right:15px}
+#menu a:hover{
+	color:white;
+	background:rgb(119, 82, 255);
+	text-shadow:none
+}
+
+#more{
+	width:180px;
+	float:right;
+	background: #F3E9F4;
+	margin-top:20px;
+	margin-right: 120px;
+	text-align: center;
+	font-size: 18pt;
+	height: 28px;
+	font-family: 'Roboto Slab', serif;
+	
+}
+#more p{
+	display: inline-block;
+	margin-top:0
+}
+#more a:hover{
+	color:white;
+	background:rgb(119, 82, 255);
+}
+.page_title{
+	text-shadow: 2px 2px 1px white;
+	font-family: 'Roboto Slab', serif;
+}
+
+/*footer*/
+#footer{
+	height:200px;
+	background-image: linear-gradient(to bottom, lavender, rgb(187, 168, 255));
+	clear:both;
+	padding:20px 90px 20px 140px;
+	font-family: 'Roboto Slab', serif;
+	font-size:12pt
+}
+.footer_column{
+	width:100px;
+	height:100px;	
+	margin:5px;
+	float:left
+}
+.footer_column a:hover{
+	background: #F8F8F8
+}
+#web_name{
+	float:right;
+	font-family: 'Lobster', cursive;
+	font-size:50pt;
+	margin:0 auto;
+	width:340px
+}
+#logo2{
+	width:220px;
+	margin-top:-80px;
+	float:right;
+}
+
+#web_name{
+	
+	font-size: 40pt;
+}
+
+
+/*page title*/
+.page_title{
+	font-size: 20pt;
+	margin:30px auto 45px 70px
+}
+
+

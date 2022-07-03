@@ -1,0 +1,337 @@
+<!doctype html >
+<html lang="en">
+<head>
+<meta charset="utf-8" >
+<title>home</title>
+<link rel=" icon" href="image/logo2.png" type="image/png">
+<!--css-->
+<link rel="stylesheet" type="text/css" href="common.css" />
+<link rel="stylesheet" type="text/css" href="slideshow.css" />
+<!--font type-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo&family=Lobster&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+
+<style>
+		#recipe_page{
+			margin:auto;
+			width:1100px;
+			text-align: center;		
+		}
+		#title_recipe{
+			height:150px;
+			font-size:32pt;
+			border-bottom-style:double;
+			border-top-style:double;
+			background-image: linear-gradient(to bottom, lavender, rgb(187, 168, 255));
+			padding-top: 50px;
+			margin: 15px auto 20px;
+			font-family: 'Roboto Slab', serif;
+			
+		}
+		#recipe_page p{
+			font-family: 'Lobster', cursive;
+			font-size:16pt;	
+		}
+		
+			
+		.col1{
+			/*background-color:blanchedalmond;*/
+			height:300px;
+			width:33%;
+			float:left;
+			padding-top: 50px;
+		}
+		#col2{
+			/*background: #BBF07E;*/
+			height:480px;
+			width:34%;
+			float:left;
+		
+		}
+
+		.recipe_image{
+			width: 300px;
+			height: 200px;
+			box-shadow: 1px 1px 2px 2px dimgray
+  			
+		}
+		.recipe_image:hover{
+			transform: scale(1.1);
+			box-shadow: 0 6px 10px 5px dimgray;
+			transition: 0.2s
+			}	
+		#greeting{
+			text-align: center;
+			margin:15px auto 70px auto;
+			width: 80%;
+			font-size: 16pt;
+			text-shadow: 3px 3px 2px white;
+			font-family: 'Roboto Slab', serif;	
+		}
+		
+		.whitespace{
+			background:rgb(187, 168, 255);
+			clear: both;
+			width:1100px;
+			height:10px;
+			margin:auto
+		}
+		#wrap_part2{
+			width:1100px;
+			margin:auto
+		}
+		#tips_nav2{
+			width:530px;
+			float:left;
+			height:240px;
+			box-shadow: 0 6px 10px 3px dimgray;
+			margin:30px 15px 10px 10px;
+			
+		}
+	#tips_nav2 img{
+		float:left;
+		width:200px;
+		height:100%
+	}
+	
+	 #tips_description{
+		background: rgb(233, 227, 253);
+		float:left;
+		width: 330px;
+		height:100%;
+		padding:0 25px;
+		}
+	#tips_description #p2{
+		font-family: 'Roboto Slab', serif;
+		font-size: 20pt;
+	}
+	#tips_description p{font-family: 'Heebo', sans-serif;}
+		
+	.btn {
+	  	background-color: red;
+	 	color: white;
+		float:left;
+		padding: 16px 32px;
+		text-align: center;
+		font-size: 16px;
+		transition: 0.3s;
+		font-family: 'Roboto Slab', serif;
+	}
+
+	.btn:hover {
+		background:tomato;
+		}
+		
+/*-------------------------------login form--------------------------------*/
+		#login{
+			width:350px;
+			float:left;
+			height:350px;
+			background-color:white;	
+			box-shadow: 0 6px 10px 3px dimgray;
+			border-radius: 5%;
+			margin:30px 50px 100px 145px;
+			font-family: 'Roboto Slab', serif;
+		}
+		#title_login{
+			height:60px;
+			font-size:20pt;
+			border-bottom-style:double;
+			border-top-style:double;
+			background-image: linear-gradient(to bottom, lavender, rgb(187, 168, 255));
+			padding-top: 8px;
+			margin: 20px 0 30px;
+			text-align: center
+		}
+		#login p{
+			text-align: center
+		}
+		#email,#psw{
+			float:right;
+			width: 50%;
+			margin-right: 20px;
+			padding: 0 5px;
+			font-family: 'Heebo', sans-serif;
+			font-size:12pt;
+  			border: 1px solid #ccc;
+		}
+		label,#remember{
+			margin: 10px auto auto 20px;
+			font-family: 'Roboto Slab', serif;
+			font-size:12pt;
+		}
+		
+		
+		#btn_login{
+  			background-color: rgb(131, 98, 250);
+  			color: white;
+  			margin: 40px 0 0 20px;
+ 			border: none;
+			border-radius: 5px;
+  			cursor: pointer;
+  			width: 310px;
+			font-family: 'Roboto Slab', serif;
+			font-size:20pt;
+		}
+		#btn_login:hover{ background: rgb(176, 155, 255)}
+		#link_signup{color: red}
+	
+	</style>
+</head>
+
+<body>	
+<!--Header-->	
+
+		<div id="header">
+			<img src="image/logo2.png" id="logo" alt="pic">
+			<div id="more"> 
+				<a href="#login">Login</a>
+				<p>|</p>
+				<a href="signup.html">Sign Up</a>
+			</div>
+			<div id="menu">
+
+				<a href="index.html" id="home_nav">Home </a>
+				<a href="#recipe_page" id="recipe_nav">Recipe </a>
+				<a href="tips.html" id="tips_nav">Tips </a>
+				<a href="events.html" id="events_nav">Events </a>
+				<a href="shop.html" id="shop_nav">Shop </a>
+				<a href="upload.html" id="upload_nav">Upload</a>
+				<a href="about.html" id="about_nav">About</a>
+			</div>
+		</div>
+		<br>
+	
+<!--Slideshow-->	
+		<div class="slideshow_container">
+			<div class="mySlides fade">
+			  <img src="image/slide2.jpg"  alt="a"  >
+			</div>
+
+			<div class="mySlides fade">
+			  <img src="image/slide1.jpg" alt="b" >
+			</div>
+
+			<div class="mySlides fade">
+			  <img src="image/slide3.jpg" alt="c">
+			</div>
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		</div>
+
+		<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+		</script>
+<!--Recipe page-->	
+
+	  	<div id="recipe_page">
+			
+			<div id="title_recipe">RECIPE</div>
+		  
+			<div class="col1">
+				<a href="recipe_bread.html">
+					<img src="image/bread.jpg" alt="breads' recipe"  class="recipe_image"/>
+					<p>breads</p>
+				</a>
+			</div>
+
+			<div id="col2">
+				<h4 id="greeting" >Its Bake o'clock! <br> Get started with these recipe and hope you enjoy in baking</h4>
+				<a href="recipe_cake.html"><img src="image/cakes.jpg" alt="cakes' recipe"  class="recipe_image" /></a>
+				<p>cakes</p>
+			</div>
+
+			<div class="col1">
+				<a href="recipe_cookies.html"><img src="image/cookies.jpg" alt="cookies' recipe"  class="recipe_image" /></a>
+				<p>cookies</p>
+			</div>
+		</div>
+		
+	<br>
+	<div class="whitespace"></div>
+	<div id="wrap_part2">
+<!--Tips-->	
+
+	<div id="tips_nav2">
+		<img src="image/tips2.jpg" alt="tips option" >
+		<div id="tips_description">
+			<div id="p2"> Baking Soda VS. Baking Powder</div>
+			<p>Baking soda and baking powder are both very common chemical leaveners used ...</p>
+			<a href="tips_bakingtips.html" class="btn">Read More</a>
+		</div>
+	</div>
+<!--Login form-->	
+		<div id="login">
+			<div id="title_login"> LOGIN FORM </div>
+			<form name="login_form" method="post" >
+				<label for="email">Email: </label>
+				<input type="text" name="email" id="email">
+				<br>
+				<br>
+			  <label for="psw">Password: </label>
+			  <input type="password" name="psw" id="psw">
+				<br>
+				<br>
+   			  <input type="checkbox" name="remember" id="remember" checked> 
+			  <label for="remember" id="lbl_remember">Remember me</label>
+			  <input type="submit" name="submit" id="btn_login" value="log in "  onClick="messagebox()">
+			<p>Don't have an account? <a href="signup.html" id="link_signup">Sign up</a> </p>
+		  </form>
+		</div>
+	</div>
+	<script>
+		function messagebox()
+		{
+			alert("Successfully logged in!")
+		}
+	</script>
+<!--Footer-->	
+		<div id="footer">
+			<h3>Site Map</h3>
+			<div class="footer_column">
+				<a href="#header" id="home_nav2">Home </a><br>
+				<a href="#recipe_page" id="recipe_nav2">Recipe </a><br>
+				<a href="tips.html" id="tips_nav3">Tips </a><br>
+			</div>
+			<div class="footer_column">
+				<a href="events.html" id="events_nav2">Events </a><br>
+				<a href="shop.html" id="shop_nav2">Shop </a><br>
+				<a href="upload.html" id="upload_nav2">Upload</a><br>
+			</div>
+			<div class="footer_column">	
+				<a href="about.html" id="about_nav2">About</a><br>
+				<a href="#login" id="login_nav2">Login</a><br>
+				<a href="signup.html" id="signup_nav2">Sign Up </a><br>
+			</div>
+			<img src="image/logo2.png" id="logo2" alt="pic">
+			<p id="web_name">Bake O'clock</p>
+		</div>
+			
+	
+</body>
+</html>

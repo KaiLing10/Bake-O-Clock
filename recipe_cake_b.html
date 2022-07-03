@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Fresh Berry Cream Cake</title>
+<link rel=" icon" href="image/logo2.png" type="image/png">
+<!--css-->
+<link rel="stylesheet" type="text/css" href="common.css" />
+<link rel="stylesheet" type="text/css" href="recipe.css" />
+<link rel="stylesheet" type="text/css" href="slideshow.css" />
+<!--font type-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo&family=Lobster&family=Roboto+Slab&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+	<div id="header">
+		<img src="image/logo2.png" id="logo" alt="pic">
+		<div id="more"> 
+			<a href="index.html#login">Login</a>
+			<p>|</p>
+			<a href="signup.html">Sign Up</a>
+		</div>
+		<div id="menu">
+			<a href="index.html" id="home_nav">Home </a>
+			<a href="index.html#recipe_page" id="recipe_nav">Recipe </a>
+			<a href="tips.html" id="tips_nav">Tips </a>
+			<a href="events.html" id="events_nav">Events </a>
+			<a href="shop.html" id="shop_nav">Shop </a>
+			<a href="upload.html" id="upload_nav">Upload</a>
+			<a href="about.html" id="about_nav">About</a>
+		</div>
+	</div>
+	
+	<div class="page_title"><a href="index.html#recipe_page" >Recipe</a> &#10095; <a href="recipe_cake.html">Cakes</a> &#10095; Fresh Berry Cream Cake</div>
+	<div id="wrapper">
+	  	<div class="description">
+			<div class="container_slide">
+				  <div class="mySlides">
+					<div class="numbertext">1 / 3</div>
+					  <iframe src="https://www.youtube.com/embed/t5HFIsvrvYU" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				  </div>	
+
+				  <div class="mySlides">
+					<div class="numbertext">2 / 3</div>
+					<img src="image/berry_cake2.jpg"  alt="Berry Cream cake1">
+				  </div>
+
+				  <div class="mySlides">
+					<div class="numbertext">3 / 3</div>
+					<img src="image/berry_cake4.jpg"  alt="Berry Cream cake2">
+				  </div>
+
+				  <a class="prev" onclick="plusSlides(-1)">❮</a>
+				  <a class="next" onclick="plusSlides(1)">❯</a>
+			</div>
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("demo");
+			  var captionText = document.getElementById("caption");
+			  if (n > slides.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				  slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				  dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " active";
+			  captionText.innerHTML = dots[slideIndex-1].alt;
+			}
+		</script>
+			<h3>Fresh Berry Cream Cake</h3>
+			<p>53<img src="image/love.png" class="love" alt="love" ></p>
+			
+	 	</div>
+		<div class="ingredients">
+			<h4>Ingredients</h4>
+			<ul><li>263g sifted cake flour</li>
+				<li>2 teaspoons baking powder</li>
+				<li>1/2 teaspoon baking soda</li>
+				<li>1 teaspoon salt</li>
+				<li>170g unsalted butter</li>
+				<li>350g granulated sugar</li>
+				<li>5 large egg whites</li>
+				<li>120g sour cream</li>
+				<li>1 tablespoon pure vanilla extract</li>
+				<li>240ml whole milk</li>
+			</ul>
+			
+			<h4>Whipped Cream & Berries</h4>	
+			<ul><li>480ml heavy whipping cream</li>
+				<li>40g confectioners’ sugar</li>
+				<li>1 teaspoon pure vanilla extract</li>
+				<li>2 cups fresh berries </li>
+			</ul>
+			
+		</div>
+	
+	
+	<div class="tab_wrapper">
+		<div class="tab">
+		  <button class="tablinks" onclick="openOption(event, 'steps')" id="defaultOpen">Steps</button>
+		  <button class="tablinks" onclick="openOption(event, 'comments')">Comments</button>
+		</div>
+
+		<div id="steps" class="tabcontent">
+		  <h2>Steps</h2>
+		  <ol>
+			<li><b>Make the cake: </b>Preheat the oven to 177°C. Grease three 8-inch cake pans, line with parchment paper rounds , then grease the parchment paper. Parchment paper helps the cakes seamlessly release from the pans.</li>
+			<li>Whisk the cake flour, baking powder, baking soda, and salt together. Set aside.</li>
+			<li>Using a handheld or stand mixer fitted with a whisk attachment, beat the butter on high speed until smooth and creamy. Add the sugar and beat on high speed for 2 minutes until creamed together. Scrape down the sides and up the bottom of the bowl with a rubber spatula as needed. Add the egg whites. Beat on high speed until combined, about 2 minutes. Then beat in the sour cream and vanilla extract. Scrape down the sides and up the bottom of the bowl as needed. With the mixer on low speed, add the dry ingredients until just incorporated. With the mixer still running on low, slowly pour in the milk until combined. Do not overmix. You may need to whisk it all by hand to make sure there are no lumps at the bottom of the bowl. The batter will be slightly thick.</li>
+			<li>Pour batter evenly into cake pans. Bake for around 22-24 minutes or until the cakes are baked through. To test for doneness, insert a toothpick into the center of the cake. If it comes out clean, it is done. Allow cakes to cool completely in the pans set on a wire rack. The cakes must be completely cool before assembling.</li>
+			<li><b>Make the whipped cream: </b>Using a hand mixer or a stand mixer fitted with a whisk attachment, whip the heavy cream, confectioners’ sugar, vanilla extract, and almond extract on medium-high speed until medium peaks form, about 3-4 minutes. Medium peaks are between soft/loose peaks and stiff peaks and are the perfect consistency for decorating cakes. Use immediately or cover tightly and chill in the refrigerator for up to 24 hours. Yields about 4 cups.</li>
+			<li><b>Assemble cake: </b>If cooled cakes are domed on top, use a large serrated knife to slice a thin layer off the tops to create a flat surface. This is called “leveling” the cakes. (Discard thin layer or crumble over ice cream.) Place 1 cake layer on your cake stand or serving plate. Evenly spread 1 heaping cup of whipped cream on top. Arrange a single layer of mixed berries on top. Top with 2nd cake layer. Spread another 1 heaping cup of whipped cream on top, then a single layer of berries. Top with 3rd cake layer. Spread remaining whipped cream on top and garnish with fresh berries. Add a dusting of confectioners’ sugar on the berries, if desired, and/or garnish with fresh florals.</li>
+			<li>Chill the assembled cake, uncovered, for at least 2 hours and up to 1 day before slicing and serving. This time in the refrigerator helps the whipped cream thicken and makes cutting neater and easier. If chilling for longer than a few hours, you can carefully cover it with plastic wrap or use a cake carrier for storing in the refrigerator </li>
+			<li>Cover leftover cake tightly and store in the refrigerator for up to 5 days.</li>
+			</ol> 
+		</div>
+
+		<div id="comments" class="tabcontent">
+			<h2>Comments</h2>
+			<div class="existing_comment">
+				<img src="image/user1.jpg" alt="user 1">
+				<p><b>Nancy</b></p>
+				<p>I just made this and it's so good! &#128525; &#128525; &#128523;</p>
+			</div>
+			<hr>
+			<div class="existing_comment">
+				<img src="image/user2.jpg" alt="user 2">
+				<p><b>Sharon</b></p>
+				<p>I'm new to baking. Thanks for sharing this.  &#128516; &#128516; </p>
+			</div>
+			<hr><br>
+			<div id="rating" >
+				<form name="leave_comment" >
+					<div id="lbl_comment">Leave you comment: </div>
+					<br>
+					<textarea name="comment" id="comment_area" cols="65" rows="4"></textarea><br>
+					<input type="submit" name="submit" id="btn_submit" value="Submit" onClick="messagebox()">
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+<script>
+	function openOption(evt, option) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  document.getElementById(option).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+</script>
+		
+			 
+	</div>
+<!--js for message box-->
+	<script>
+			function messagebox()
+			{
+				alert("Successfully submitted!")
+			}
+	</script>	
+	
+	<div id="footer">
+		<h3>Site Map</h3>
+		<div class="footer_column">
+			<a href="index.html" id="home_nav2">Home </a><br>
+			<a href="index.html#recipe_page" id="recipe_nav2">Recipe </a><br>
+			<a href="tips.html" id="tips_nav3">Tips </a><br>
+		</div>
+		<div class="footer_column">
+			<a href="events.html" id="events_nav2">Events </a><br>
+			<a href="shop.html" id="shop_nav2">Shop </a><br>
+			<a href="upload.html" id="upload_nav2">Upload</a><br>
+		</div>
+		<div class="footer_column">	
+			<a href="about.html" id="about_nav2">About</a><br>
+			<a href="index.html#login" id="login_nav2">Login</a><br>
+			<a href="signup.html" id="signup_nav2">Sign Up </a><br>
+		</div>
+		<img src="image/logo2.png" id="logo2" alt="pic">
+		<div id="web_name">Bake O'clock</div>
+	</div>
+</body>
+</html>

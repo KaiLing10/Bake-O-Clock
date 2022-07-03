@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel=" icon" href="image/logo2.png" type="image/png">
+<!--css-->
+<link rel="stylesheet" type="text/css" href="common.css" />
+<!--font type-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo&family=Lobster&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+<style>
+	
+	#page_wrapper{
+		width:820px;
+		margin: auto
+	}
+/*---------signup form------------*/
+	#signup{
+		width:350px;
+		float:left;
+		height:350px;
+		margin-bottom: 50px;
+		background-color:white;	
+		box-shadow: 0 6px 10px 3px dimgray;
+		border-radius: 5%;
+		font-family: 'Roboto Slab', serif;
+		}
+	#title_signup{
+		height:50px;
+		font-size:20pt;
+		border-bottom-style:double;
+		border-top-style:double;
+		background-image: linear-gradient(to bottom, lavender, mediumorchid);
+		padding-top: 10px;
+		margin: 20px 0 30px;
+		text-align: center
+	}
+	#signup p{
+		text-align: center
+	}
+	#email,#psw{
+		float:right;
+		width: 50%;
+		margin-right: 20px;
+		padding: 0 5px;
+		font-family: 'Heebo', sans-serif;
+		font-size:12pt;
+  		border: 1px solid #ccc;
+	}
+	label,#remember,form p{
+		margin: 15px auto auto 20px;
+		font-family: 'Roboto Slab', serif;
+		font-size:12pt;
+	}
+	
+	#btn_signup{
+  			background-color: darkviolet;
+  			color: white;
+  			margin: 20px 0 0 20px;
+ 			border: none;
+			border-radius: 5px;
+  			cursor: pointer;
+  			width: 310px;
+			font-family: 'Roboto Slab', serif;
+			font-size:20pt;
+		}
+	#btn_signup:hover{ background:#B951FF}
+	#link_login{color: red}
+	
+	#benefit{
+		float:right;
+		background:#F0CFFF;
+		box-shadow: 0 6px 10px 3px dimgray;
+		border-radius: 5px;
+		width:330px;
+		padding:10px 30px;
+		height:330px;	
+	}
+	#benefit h2,p{
+		font-family: 'Roboto Slab', serif;
+		font-size:16pt
+	}
+	
+	#benefit h2{text-shadow: 2px 2px 1px white;}
+</style>
+</head>
+
+<body>
+	<div id="header">
+		<img src="image/logo2.png" id="logo" alt="pic">
+		<div id="more"> 
+			<a href="index.html#login">Login</a>
+			<p>|</p>
+			<a href="signup.html">Sign Up</a>
+		</div>
+		<div id="menu">
+			<a href="index.html" id="home_nav">Home </a>
+			<a href="index.html#recipe_page" id="recipe_nav">Recipe </a>
+			<a href="tips.html" id="tips_nav">Tips </a>
+			<a href="events.html" id="events_nav">Events </a>
+			<a href="shop.html" id="shop_nav">Shop </a>
+			<a href="upload.html" id="upload_nav">Upload</a>
+			<a href="about.html" id="about_nav">About</a>
+		</div>
+	</div>
+	
+	<div class="page_title">Sign Up</div>
+	
+	<div id="page_wrapper">
+		<div id="signup">
+			<div id="title_signup"> SIGNUP FORM </div>
+			<form name="signup_form" method="" action="">
+				<label for="email">Email: </label>
+				<input type="text" name="email" id="email">
+				<br><br>
+			  	<label for="psw">Password: </label>
+			  	<input type="password" name="psw" id="psw">
+				<br><br>
+   			 	<input type="checkbox" name="remember" id="remember" checked> 
+			 	<label for="remember" id="lbl_remember">Remember me</label>
+			 	<input type="submit" name="submit" id="btn_signup" value="sign up" onClick="messagebox()">
+				<p>Have an account? <a href="index.html#login" id="link_login">Log in</a> </p>
+		  	</form>
+		</div>
+		<script>
+			function messagebox()
+			{
+				alert("Successfully signed up!")
+			}
+		</script>
+   	
+		<div id="benefit">
+			<h2> Join us now!</h2>
+			<p> &#10004; purchase from our shop</p>
+			<p> &#10004; upload your recipes & tips</p>
+			<p> &#10004; open  event reminder</p>
+			<p> &#10004; open reminder for new recipe</p>
+		</div>
+	</div>
+
+	
+	<div id="footer">
+		<h3>Site Map</h3>
+		<div class="footer_column">
+			<a href="index.html" id="home_nav2">Home </a><br>
+			<a href="index.html#recipe_page" id="recipe_nav2">Recipe </a><br>
+			<a href="tips.html" id="tips_nav3">Tips </a><br>
+		</div>
+		<div class="footer_column">
+			<a href="events.html" id="events_nav2">Events </a><br>
+			<a href="shop.html" id="shop_nav2">Shop </a><br>
+			<a href="upload.html" id="upload_nav2">Upload</a><br>
+		</div>
+		<div class="footer_column">	
+			<a href="about.html" id="about_nav2">About</a><br>
+			<a href="index.html#login" id="login_nav2">Login</a><br>
+			<a href="signup.html" id="signup_nav2">Sign Up </a><br>
+		</div>
+		<img src="image/logo2.png" id="logo2" alt="pic">
+		<div id="web_name">Bake O'clock</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Chocolate Sweet Rolls</title>
+<link rel=" icon" href="image/logo2.png" type="image/png">
+<!--css-->
+<link rel="stylesheet" type="text/css" href="common.css" />
+<link rel="stylesheet" type="text/css" href="recipe.css" />
+<link rel="stylesheet" type="text/css" href="slideshow.css" />
+<!--font type-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo&family=Lobster&family=Roboto+Slab&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+	<div id="header">
+		<img src="image/logo2.png" id="logo" alt="pic">
+		<div id="more"> 
+			<a href="index.html#login">Login</a>
+			<p>|</p>
+			<a href="signup.html">Sign Up</a>
+		</div>
+		<div id="menu">
+			<a href="index.html" id="home_nav">Home </a>
+			<a href="index.html#recipe_page" id="recipe_nav">Recipe </a>
+			<a href="tips.html" id="tips_nav">Tips </a>
+			<a href="events.html" id="events_nav">Events </a>
+			<a href="shop.html" id="shop_nav">Shop </a>
+			<a href="upload.html" id="upload_nav">Upload</a>
+			<a href="about.html" id="about_nav">About</a>
+		</div>
+	</div>
+<!--choc sweet roll recipe-->
+	<div class="page_title"><a href="index.html#recipe_page" >Recipe</a> &#10095; <a href="recipe_bread.html">Breads</a> &#10095; Chocolate Sweet Rolls</div>
+	<div id="wrapper">
+	  	<div class="description">
+			<div class="container_slide">
+				  <div class="mySlides">
+					<div class="numbertext">1 / 3</div>
+					  <iframe src="https://www.youtube.com/embed/qxLoqgd76HI" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				  </div>	
+
+				  <div class="mySlides">
+					<div class="numbertext">2 / 3</div>
+					<img src="image/choc_rolls1.jpg"  alt="choc rolls2">
+				  </div>
+
+				  <div class="mySlides">
+					<div class="numbertext">3 / 3</div>
+					<img src="image/choc_rolls2.jpg"  alt="choc rolls3">
+				  </div>
+
+				  <a class="prev" onclick="plusSlides(-1)">❮</a>
+				  <a class="next" onclick="plusSlides(1)">❯</a>
+			</div>
+<!--js for slideshow-->
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("demo");
+			  var captionText = document.getElementById("caption");
+			  if (n > slides.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				  slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				  dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " active";
+			  captionText.innerHTML = dots[slideIndex-1].alt;
+			}
+		</script>
+<!--description-->
+			<h3>Chocolate Sweet Rolls</h3>
+			<p>29<img src="image/love.png" class="love" alt="love" ></p>	
+	 	</div>
+		
+<!--ingredients-->
+		<div class="ingredients">
+			<h4>Ingredients</h4>
+			<ul><li>240ml whole milk, warmed to about 38°C</li>
+				<li>75 granulated sugar, divided</li>
+				<li>9g active dry or instant yeast</li>
+				<li>72g unsalted butter, melted and slightly cooled</li>
+				<li>2 large eggs, at room temperature</li>
+				<li>1 teaspoon salt</li>
+				<li>530g bread flour (spoon & leveled)</li>
+			</ul>
+			
+			<h4>Chocolate Filling</h4>	
+			<ul><li>90g unsalted butter</li>
+				<li>100g packed light or dark brown sugar</li>
+				<li>10g unsweetened natural cocoa powder</li>
+				<li>1 teaspoon ground cinnamon</li>
+				<li>1 teaspoon pure vanilla extract</li>
+				<li>135g semi-sweet chocolate chips</li>
+			</ul>
+			
+			<h4>Espresso Icing</h4>
+			<ul><li>45ml heavy cream*</li>
+				<li>1 teaspoon espresso powder*</li>
+				<li>180g confectioners’ sugar, sifted </li>
+				<li>1/2 teaspoon pure vanilla extract</li> 
+			</ul>
+		</div>
+	
+	<!--steps & comments in tab-->
+	<div class="tab_wrapper">
+		<div class="tab">
+		  <button class="tablinks" onclick="openOption(event, 'steps')" id="defaultOpen">Steps</button>
+		  <button class="tablinks" onclick="openOption(event, 'comments')">Comments</button>
+		</div>
+
+		<div id="steps" class="tabcontent">
+		  <h2>Steps</h2>
+		  <ol>
+			<li><b>Prepare the dough:</b> Whisk the warm milk, sugar, and the yeast together in the bowl of your stand mixer fitted with a dough hook or paddle attachment. Cover and allow mixture to sit for about 5 minutes or until foamy on top.</li>
+			<li>Add the remaining sugar, the butter, eggs, salt, and 1 130g flour and beat on medium speed for 1 minute. Scrape down the sides of the bowl with a rubber spatula. Add 400g flour, switch the mixer down to low speed, and beat until a soft dough forms and pulls away from the sides of the bowl. Beat in 2-3 more Tablespoons of flour if dough seems very sticky. </li>
+			<li><b>Knead the dough:</b> Keep the dough in the mixer and beat on low speed for an additional 3 minutes or knead by hand on a lightly floured surface for 3 minutes.</li>
+			<li><b>1st Rise:</b> Lightly grease a large bowl with oil or use nonstick spray. Place the dough in the bowl, turning it to coat all sides in the oil. Cover the bowl with aluminum foil, plastic wrap, or a clean kitchen towel. Allow the dough to rise in a relatively warm environment for 2 hours or until double in size. </li>
+			<li>Grease the bottom and sides of a metal or glass 9×13 inch baking dish or line with parchment paper.</li>
+			<li><b>Roll out the dough:</b> Punch down the dough to release the air. Place dough on a lightly floured work surface and using a lightly floured rolling pin, roll dough into a 10×16 inch rectangle. Make sure the dough is smooth and evenly thick. If the dough keeps shrinking as you roll it out, stop what you’re doing, cover it lightly, and let it rest for 10 minutes to relax the gluten. </li>
+			<li><b>For the filling: </b>Mix all of the filling ingredients together except for the chocolate chips. The softer the butter is, the easier it is to mix. Spread mixture all over the dough. Sprinkle chocolate chips evenly on top. Tightly roll up the dough to form a 16-inch-long log. If some filling spills out, sprinkle it on top of the roll. With an extra sharp knife, cut into 12 even rolls, between 1-1.5 inches each. Arrange in the prepared baking pan.</li>
+			<li><b>2nd Rise:</b> Cover the rolls tightly and allow to rise until doubled in size, about 1 hour. (Or use the overnight option below.)</li>
+			<li>Preheat the oven to 177°C. Bake rolls for about 25 minutes or until they are lightly browned on top. After about 15 minutes, tent a piece of aluminum foil over the top of the pan to prevent the tops from browning too quickly and baking unevenly. Remove pan from the oven and place pan on a wire rack for about 10 minutes as you make the icing.</li>
+			<li><b>Make the icing:</b> Warm the cream on the stove until barely simmering or warm it in the microwave for 15-30 seconds. Whisk espresso powder into the warm cream, then whisk in the confectioners’ sugar and vanilla extract until combined. Drizzle the icing over the warm rolls and serve immediately.</li>
+			<li>Cover leftover frosted or unfrosted rolls tightly and store at room temperature for up to 2 days or in the refrigerator for up to 5 days.</li>
+			</ol> 
+		</div>
+
+		<div id="comments" class="tabcontent">
+			<h2>Comments</h2>
+			<div class="existing_comment">
+				<img src="image/user3.jpg" alt="user 3">
+				<p><b>Jack</b></p>
+				<p>Good recipe! &#128525; </p>
+			</div>
+			<hr>
+			<div class="existing_comment">
+				<img src="image/user2.jpg" alt="user 2">
+				<p><b>Sharon</b></p>
+				<p>It looks nice! Thanks for sharing this. &#128516; &#128516; </p>
+			</div>
+			<hr><br>
+			<div id="rating" >
+				<form name="recipe_comment" >
+					<div id="lbl_comment">Leave you comment: </div>
+					<br>
+					<textarea name="comment" id="comment_area" cols="65" rows="4"></textarea><br>
+					<input type="submit" name="submit" id="btn_submit" value="Submit" onClick="messagebox()">
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!--js for tab-->
+	<script>
+		function openOption(evt, option) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(option).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+
+		document.getElementById("defaultOpen").click();
+	</script>
+				 
+	<!--js for message box-->
+	<script>
+			function messagebox()
+			{
+				alert("Successfully submitted!")
+			}
+	</script>	
+	<!--footer-->
+	<div id="footer">
+		<h3>Site Map</h3>
+		<div class="footer_column">
+			<a href="index.html" id="home_nav2">Home </a><br>
+			<a href="index.html#recipe_page" id="recipe_nav2">Recipe </a><br>
+			<a href="tips.html" id="tips_nav3">Tips </a><br>
+		</div>
+		<div class="footer_column">
+			<a href="events.html" id="events_nav2">Events </a><br>
+			<a href="shop.html" id="shop_nav2">Shop </a><br>
+			<a href="upload.html" id="upload_nav2">Upload</a><br>
+		</div>
+		<div class="footer_column">	
+			<a href="about.html" id="about_nav2">About</a><br>
+			<a href="index.html#login" id="login_nav2">Login</a><br>
+			<a href="signup.html" id="signup_nav2">Sign Up </a><br>
+		</div>
+		<img src="image/logo2.png" id="logo2" alt="pic">
+		<div id="web_name">Bake O'clock</div>
+	</div>
+</body>
+</html>

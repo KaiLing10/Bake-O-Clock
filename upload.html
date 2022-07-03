@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>upload</title>
+<link rel=" icon" href="image/logo2.png" type="image/png">
+<!--css-->
+<link rel="stylesheet" type="text/css" href="common.css" />
+<!--font type-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo&family=Lobster&family=Roboto+Slab&display=swap" rel="stylesheet">
+<style>
+	#upload_option{
+		width:300px;
+		background:rgb(235, 231, 249);
+		margin:25px auto 20px 280px ;
+		text-align: center;
+		font-size: 18pt;
+		font-family: 'Roboto Slab', serif;
+	}
+	
+	#upload_option a:hover{
+		color:white;
+		background:rgb(148, 118, 255);
+		font-family: 'Roboto Slab', serif;
+	}
+	#upload_option p{display: inline-block}
+	form{
+		width:700px;
+		height:auto;
+		margin:0 auto 50px;
+		padding:20px 0 20px 90px;
+		background:rgb(229, 222, 252);
+		box-shadow: 0 6px 10px 3px dimgray;
+	}
+	label{
+		font-family: 'Roboto Slab', serif;
+		font-size: 14pt;
+	}
+	h2{font-family: 'Roboto Slab', serif;}
+	input,textarea{
+		font-family: 'Heebo', sans-serif;
+		font-size: 14pt;
+		margin-bottom: 15px;
+		padding:2px 15px
+	}
+	.radio{cursor:pointer}
+	.lbl_radio{
+		cursor:pointer;
+		margin-right: 30px
+	}
+	.btn_submit{
+		width:100px;
+		height:30px;
+		margin-bottom: 20px;
+		text-align: center;
+		color: white;
+		background-color: rgb(148, 118, 255);
+		cursor: pointer
+	}
+</style>
+</head>
+
+<body>
+	<div id="header">
+		<img src="image/logo2.png" id="logo" alt="pic">
+		<div id="more"> 
+			<a href="index.html#login">Login</a>
+			<p>|</p>
+			<a href="signup.html">Sign Up</a>
+		</div>
+		<div id="menu">
+			<a href="index.html" id="home_nav">Home </a>
+			<a href="index.html#recipe_page" id="recipe_nav">Recipe </a>
+			<a href="tips.html" id="tips_nav">Tips </a>
+			<a href="events.html" id="events_nav">Events </a>
+			<a href="shop.html" id="shop_nav">Shop </a>
+			<a href="upload.html" id="upload_nav">Upload</a>
+			<a href="about.html" id="about_nav">About</a>
+		</div>
+	</div>
+	
+	<div class="page_title">Upload</div>
+	<div id="upload_option"> 
+		<a href="#upload_recipe">Recipe</a>
+		<p>|</p>
+		<a href="#upload_tips">Baking Tips</a>
+	</div>
+	<!--upload recipe-->
+	<form name="upload_recipe" id="upload_recipe">
+		<h2>Upload recipe</h2>
+		<input type="radio" name="category" id="bread" class="radio">
+		<label for="bread" class="lbl_radio">Bread</label>
+		<input type="radio" name="category" id="cake" class="radio">
+		<label for="cake" class="lbl_radio">Cake</label>
+		<input type="radio" name="category" id="cookies" class="radio">
+		<label for="cookies" class="lbl_radio">Cookies</label>
+		<br>
+		<label for="name">Recipe Name: </label><br>
+		<input type="text" name="name" id="name" size="60">
+		<br>
+		<label for="ingredients">Ingredients: </label><br>
+		<textarea name="ingredients" id="ingredients" cols="60" rows="10"></textarea><br>
+		<label for="steps">Steps: </label><br>
+		<textarea name="steps" id="steps" cols="60" rows="10"></textarea><br>					
+		<br>
+		<label for="image">Images: </label>
+		<input type="file" name="image" id="image" ><br>
+		<input type="submit" name="submit" class="btn_submit" value="Submit" onClick="messagebox()">		
+	</form>
+	
+	<!--upload tips-->
+	<form name="upload_tips"  id="upload_tips">
+		<h2>Upload baking tips</h2>
+		<label for="title">Tips Title: </label><br>
+		<input type="text" name="title" id="title" size="60"><br>
+		<label for="content">Content: </label><br>
+		<textarea name="content" id="content" cols="60" rows="10"></textarea><br>
+		<label for="image2">Images: </label>
+		<input type="file" name="image2" id="image2" ><br>
+		<input type="submit" name="submit" class="btn_submit" value="Submit" onClick="messagebox()" >	
+	</form>
+	
+	<script>
+			function messagebox()
+			{
+				alert("Successfully submitted!")
+			}
+	</script>
+	
+	<!--footer-->
+	<div id="footer">
+		<h3>Site Map</h3>
+		<div class="footer_column">
+			<a href="index.html" id="home_nav2">Home </a><br>
+			<a href="index.html#recipe_page" id="recipe_nav2">Recipe </a><br>
+			<a href="tips.html" id="tips_nav3">Tips </a><br>
+		</div>
+		<div class="footer_column">
+			<a href="events.html" id="events_nav2">Events </a><br>
+			<a href="shop.html" id="shop_nav2">Shop </a><br>
+			<a href="upload.html" id="upload_nav2">Upload</a><br>
+		</div>
+		<div class="footer_column">	
+			<a href="about.html" id="about_nav2">About</a><br>
+			<a href="index.html#login" id="login_nav2">Login</a><br>
+			<a href="signup.html" id="signup_nav2">Sign Up </a><br>
+		</div>
+		<img src="image/logo2.png" id="logo2" alt="pic">
+		<div id="web_name">Bake O'clock</div>
+	</div>
+</body>
+</html>
